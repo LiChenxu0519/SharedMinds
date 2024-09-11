@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Stream of Consciousness</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    }
+
+    #thoughts {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .thought {
+        position: absolute;
+        font-size: 2em;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #input-container {
+        position: absolute;
+        bottom: 84px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        font-size: 1.5em;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+</style>
+<body>
+    <div id="thoughts"></div>
+
+    <div id="input-container">
+        <input type="text" id="thoughtInput" placeholder="Tell me your thoughts...secretly">
+    </div>
+    <script src="week1.js"></script>
+</body>
+</html>
