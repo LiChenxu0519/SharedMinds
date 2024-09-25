@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyone is a flower</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        canvas {
+            margin-top: 20px;
+        }
+
+        input, button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bloom</h1>
+    <p>What are you thinking?</p>
+
+    <!-- Input and button to trigger the image generation -->
+    <input type="text" id="input_image_prompt" value="Type something here..." size="50">
+    <button id="askButton">Submit</button>
+
+    <!-- Feedback message -->
+    <p id="feedback"></p>
+
+    <!-- Create a container for the canvas -->
+    <div id="canvasContainer">
+        <!-- The canvas will be created dynamically by p5.js -->
+    </div>
+
+    <!-- Link to the p5.js library and the external JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="/Week3/script.js"></script>
+
+</body>
+</html>
